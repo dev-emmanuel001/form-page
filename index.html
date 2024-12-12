@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="img"></div>
+    <p class="create"><strong>Create A Free Account</strong> </p>
+    <br>
+    <!-- container  -->
+    <div class="fill">
+        <form action="index.html" method="post">
+            <!-- first name  -->
+            <div class="box">
+                <label for="name">First Name</label>
+                <input class="input" type="text" id="first-name" placeholder="enter first name" required>
+            </div>
+            <!-- middle name  -->
+            <div class="box">
+                <label for="name">Middle Name</label>
+                <input class="input" type="text" id="middlename" placeholder="enter middle name" required>
+            </div>
+            <!-- surname -->
+            <div class="box">
+                <label for="name">Surname</label>
+                <input class="input" type="text" id="surname" placeholder="enter surname" required>
+            </div>
+            <!-- username -->
+            <div class="box">
+                <label for="name">Username</label>
+                <input class="input" type="text" id="username" placeholder="enter valid username" required>
+            </div>
+            <!-- phone no -->
+            <div class="box">
+                <label for="number">Phone NO</label>
+                <input class="input" type="tel" name="number"maxlength="11" id="number" placeholder="enter valid phone number"
+                required>
+            </div>
+            <!-- email -->
+            <div class="box">
+                <label for="email">Email</label>
+                <input class="input" type="email" name="email" id="email" required placeholder="enter valid email">
+            </div>
+            <!-- age -->
+            <div class="box">
+                <label for="age">Age</label>
+                <input class="input" type="number" min="18" required placeholder="enter accurate age">
+            </div>
+            <!-- password -->
+            <div class="box">
+                <label for="password">Password</label>
+                <input class="input" type="password" name="password" id="password" required
+                    placeholder="enter password">
+            </div>
+            <!-- date of Birth -->
+            <div class="box">
+                <label for="birth">Date of birth</label>
+                <input class="input" type="date" name="date" id="date">
+            </div>
+            <!-- Gender -->
+            <div>
+                <span>Gender</span>
+                <input id="male" type="radio" name="gender">
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender">
+                <label for="female">Female</label>
+            </div>
+            <!-- course -->
+            <div class="box">
+                <label for="course">Course</label>
+                <select class="input" name="course" id="course">
+                    <option value="Training">Training</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="retired">Retired</option>
+                    <option value="Management">Management</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- years of experience -->
+            <div class="box">
+                <label for="years">Years of experience</label>
+                <input class="input" id="years" name="years-choice" text="type" list="years-choice" required>
+                <datalist id="years-choices">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </datalist>
+            </div>
+            <!-- Description About Yourself -->
+            <div class="box">
+                <label for="description">A Brief Description About Yourself</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="OPTIONAL"></textarea>
+            </div>
+            
+            <!-- submit -->
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+</body>
+
+</html>
